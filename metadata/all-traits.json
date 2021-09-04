@@ -1,0 +1,20 @@
+[
+    {
+        "Background": "Purple",
+        "Circle": "Green",
+        "Square": "Green",
+        "tokenId": 0
+    },
+    {
+        "Background": "Orange",
+        "Circle": "Orange",
+        "Square": "Yellow",
+        "tokenId": 1
+    },
+    {
+        "Background": "Red",
+        "Circle": "Green",
+        "Square": "Blue",
+        "tokenId": 2
+    }
+]
