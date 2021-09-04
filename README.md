@@ -1,8 +1,10 @@
 
 
 ## About
-Python Notebook in Jupyter that will generate a series of unique images using a collection of layers.
+This is a fork from https://github.com/benyaminahmed/nft-image-generator
+Instead of using a Python Notebook, this is strait Python.  I left the Notebook file for comparison, but the main script here is generator.py
 
+I added detailed notes on what needs to be changed in each section of the code, to fit your graphics, layers and traits.
 ## Getting Started
 1. Install [Python](https://www.python.org/downloads/)
 
@@ -19,23 +21,15 @@ python get-pip.py
 pip install pillow
 ```
 
-4. Install Python display
+4. Run the code
 ```
-pip install display
-```
-
-5. Install Jupyter Notebook
-```
-pip install jupyter 
+python generator.py
 ```
 
-6. Run Jupyter in your nft-image-generator folder
-```
-jupyter notebook
-```
+# Results
+If the program executes successfully, it will output all the generated images to the /images folder, and the metadata to the /metadata folder. The filenames will refer to tokenIds. 
 
-7. Run the commands in [generate.ipynb] to generate images.
+## Common Errors
+VaueError: Images do not match
 
-8. First time you run notebook, it will ask you to install ipykernel, accept this.
- 
-9. If the program executes successfully, it will output all the generated images to the /images folder, and the metadata to the /metadata folder. The filenames will refer to tokenIds. 
+Fix: your images all need to be of the same size.  If the background is 1000x1000 and a trait layer is 500x500 this error will be thrown.
